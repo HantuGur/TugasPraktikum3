@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Quicksand:wght@400;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <p class="nim">NIM: 535250144</p>
+
+  <main class="container">
+    <h1>Expense Tracker</h1>
+    <p class="subtitle">catat pengeluaranmu</p>
+
+
+    <form id="expense-form">
+      <input type="text" id="expense-name" placeholder="Nama/keterangan pengeluaran" required>
+      <input type="number" id="expense-amount" placeholder="Nominal (Rp)" min="1" required>
+      <button type="submit">+ Tambah</button>
+    </form>
+
+    <!-- RINGKASAN -->
+    <section class="summary">
+      <div class="summary-box">
+        <span class="summary-label">Total Pengeluaran</span>
+        <span id="total-amount">Rp0</span>
+      </div>
+      <div class="summary-box">
+        <span class="summary-label">Jumlah Data</span>
+        <span id="total-count">0</span>
+      </div>
+    </section>
+
+    <!-- LIST PENGELUARAN -->
+    <ul id="expense-list"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
